@@ -1,0 +1,128 @@
+
+.popup {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-negro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.popup__textos-text-up {
+    font-size: .7rem;
+    color: var(--color-blanco);
+}
+.popup__text-cookies {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--color-blanco);
+}
+.popup__textos-head {
+    display: flex;
+    grid-gap: 1rem;
+    align-items: center;
+}
+
+.popup__textos-text {
+    font-size: .7rem;
+    color: var(--color-blanco);
+    width: 12rem;
+}
+.cookies__link {
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.popup--cerrar {
+    display: none;
+}
+
+.cookiesbutton_accept {
+    display: block;
+    border-radius: 4rem;
+    height: 2.8rem;
+    width:  18rem;
+
+}
+
+.cookiesbutton_pers {
+    display: block;
+    border-radius: 3rem;
+    border: 2px solid var(--color-blanco);
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    height: 2.8rem;
+    margin: .2rem auto;
+    width:  18rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(25px);
+    -ms-transform: translateX(25px);
+    transform: translateX(25px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.popup__textos-personalizar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .7rem;
+
+}
+

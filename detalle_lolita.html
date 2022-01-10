@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lolita</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="theme-color" content="#3c790a">
+    <meta name="theme-color"
+          content="#ecd96f"
+          media="(prefers-color-scheme: light)">
+    <meta name="theme-color"
+          content="#0b3e05"
+          media="(prefers-color-scheme: dark)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Antonio">
+    <meta name="generator" content="Clojure">
+    <meta name="keywords" content="portafolio, cine, películas, testimonios, premios, biografía, Kubrick">
+    <meta name="description" content="Web diseñada para mostrar el trabajo de Stanley Kubric a lo largo de toda su carrera">
+    <meta property="og:image" content="img/screenshot.png">
+    <meta property="og:title" content="Stanley Kubrick">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@cuenta">
+    <meta name="twitter:creator" content="@cuenta">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css@v1.7/symbiosis.min.css">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 601px)">
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/gh/tanrax/FFNM@1.5.0/dist/ffnm.min.js"  integrity="sha384-qlI8XJcMcJMh52x4w9HA9ItB8KmW6pKaJXijVQFl6UvT1nGCH+U6Y7sbbc11HkCH" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class=" container container_main">
+    <header class="header header--home">
+        <div class="header__main">
+            <div class="header__logo">
+                <a href="home.html" class="header__logo-link">
+                    <img src="img/icons/aperture.svg" class="imagen_logo" alt="imagen-logo"><span class="header__logo-title">Stanley                        Kubrick</span>
+                </a>
+            </div>
+            <!-- menú hamburguesa con javascript -->
+            <button class="header__nav-menu--open" is-click="class:add('show--menu', '#nav')">
+                <img src="img/icons/menu.svg" class="imagen_bars" alt="imagen-menu">
+            </button>
+            <nav id="nav" class="header__nav">
+                <!-- botón cerrar -->
+                <div class="nav__button" is-click="class:remove('show--menu', '#nav')">
+                    <button class="header__button-nav--close"><span class="botonX">X</span></button>
+                </div>
+                <!-- Menú -->
+                <ul class="nav__ul">
+                    <li class="nav__item">
+                        <a href="biografia.html" class="nav__link">Biografía</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="proyectos.html" class="nav__link mobilepart">Proyectos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link desktoppart">Proyectos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="premios.html" class="nav__link mobilepart">Premios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="premios_detalle.html" class="nav__link desktoppart">Premios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Testimonios</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main lolita">
+        <section class="detalle">
+            <article class="detalle__item">
+                <div class="detalle__pic-img">
+                    <img src="./img/Lolita.png" alt="Lolitaimg" class="detalle-img">
+                </div>
+            </article>
+            <article class="detalle__item">
+                <div class="detalle_texts">
+                    <h2 class="detalle__texts-title">Lolita</h2>
+                    <p class="detalle__texts-description">En 1955, año de su publicación, la novela Lolita de Vladimir Nabokov vendió 300.000 ejemplares, que en las siguientes tres décadas aumentarían hasta los catorce millones. La prosa de su autor, sin duda, era exquisita. Pero para las ventas fue más útil el escándalo: la historia de un adulto obsesionado con una chica de 12 años constituía de por sí una atractiva transgresión..</p>
+
+                    <p class="detalle__texts-description">Por entonces eso la hacía imposible de llevar al cine. La Motion Picture Association of America debía aprobar los valores morales de cada película antes de su exhibición y, según todos los pronósticos, encontraría repugnante la sola idea de filmar Lolita. Eso fascinó a un cabezadura como Stanley Kubrick.</p>
+
+                    <p class="detalle__texts-description">En julio de 1959, mientras se encontraba con su esposa cazando mariposas en Arizona, Vladimir Nabokov recibió un mensaje de Kubrick pidiéndole reunirse con él en Beverly Hills. Quería que el novelista escribiese el guión de la película. Recuerda Nabokov:</p>
+
+                    <p class="detalle__texts-description">—Ofrecían unos honorarios considerables, pero la idea de manosear mi propia novela me producía rechazo. No obstante, cierta reducción en la actividad de los lepidópteros locales nos persuadió de que no sería grave desplazarnos hacia la Costa Oeste.</p>
+
+                    <p class="detalle__texts-description">En la reunión, Kubrick tuvo que plantearle a Nabokov una concesión que a él mismo le resultaba odiosa, pero que era requisito indispensable para conseguir dinero: los personajes de Humbert Humbert y Lolita tendrían que casarse. Para purificar su relación y aplacar a los moralistas hacía falta un final feliz.</p>
+
+
+                    <p class="detalle__texts-description">Nabokov respondió que ni de broma. En sus propias y recargadas palabras: “Tras una semana de estéril meditación a orillas del lago Tahoe (donde un calamitoso brote de manzanita impedía la presencia de mariposas en condiciones) , resolví no aceptar el trabajo y partí rumbo a Europa”.</p>
+
+                    <p class="detalle__texts-description">Pero mientras viajaba entre Londres, Roma y París, Nabokov se arrepintió de su decisión. Tras “una súbita iluminación nocturna, acaso de origen diabólico”, dio con la manera de adaptar su historia a la pantalla. Paralelamente, Kubrick quedó decepcionado con su guionista y le pidió al escritor que reconsiderase su oferta. Le ofreció unos 30.000 euros y otros 26.600 si firmaba el guión en solitario, más seis meses de gastos pagados en Los Ángeles para cazar mariposas y, de ser posible, trabajar juntos en la historia. Era una oferta difícil de rechazar..</p>
+
+                    <p class="detalle__texts-description">La película fue candidata al Óscar al mejor guion adaptado.</p>
+
+                    <p class="detalle__texts-description">En 1997 se rodó otra versión de la película dirigida por Adrian Lyne e interpretada, entre otros, por Jeremy Irons y Melanie Griffith.</p>
+                </div>
+            </article>
+            <article class="detalle__item">
+                <div class="detalle__fecha-lateral">
+                    <hr class="leftborder"> <p class="detalle__fecha">1968</p><hr class="rightborder">
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="footer-nav">
+            <div class="footer-link">
+                <a class="footer__web-link" href="https://www.minecraft.net/es-es">www.stanleykubrick.com</a>
+            </div>
+            <ul class="footer__nav-ul">
+                <li class="footer__nav-li">
+                    <a href="#" class="footer__nav-link">
+                        <img class="footer-nav__icono" src="img/icons/twitter.svg" alt="twitter">
+                    </a>
+                </li>
+                <li class="footer__nav-li">
+                    <a href="#" class="footer-nav__link">
+                        <img class="footer-nav__icono" src="img/icons/instagram.svg" alt="instagram">
+                    </a>
+                </li>
+                <li class="footer-nav__li">
+                    <a href="#" class="footer-nav__link">
+                        <img class="footer-nav__icono" src="img/icons/facebook.svg" alt="facebook">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</div>
+</body>
+</html>

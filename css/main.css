@@ -1,0 +1,1033 @@
+/* Colores */
+
+
+:root {
+    --color-negro: #121212;
+    --color-negropacity: rgba(18, 18, 18, 0.73);
+    --color-rojo: #FF5F5F;
+    --color-blanco: #E5E5E5;
+    --color-grisletra: #C4C4C4;
+    --color-moka: #CFB7A4;
+    --color-negrogris: #242424;
+}
+/* Colores sección detalles */
+
+
+:root {
+    --color-naranja: #FA7E0C;
+    --color-blancopuro: #FFF;
+    --color-azul: #6E93FF;
+    --color-rosa: #FFC3C8;
+    --color-verde: #2DAC5F;
+    --color-oro: #FFBD14;
+    --color-gris: #C9CADA;
+    --color-purpura: #B183D7;
+    --color-marron: #CFB7A4;
+    --color-amarillo: #FAFE3F;
+    --color-aquamarina: #96EBF0;
+    --color-celeste: #1EA7F4;
+}
+
+
+/* Fuentes */
+
+@font-face {
+    font-family:"Inter";
+    src: url("../fonts/Inter-Medium.woff2") format("woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family:"Inter";
+    src: url("../fonts/Inter-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+}
+
+
+/* Generales */
+
+body {
+    background-color: var(--color-negro);
+    font-family: Inter;
+    font-weight: 500;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Inter;
+    font-weight: 800;
+}
+
+.container_main {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+/* ---- Header section ---- */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--color-negro);
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-grisletra);
+    margin-bottom: 1rem;
+    z-index: 100;
+}
+
+.header__logo-title {
+    font-size: 1.8rem;
+    color: var(--color-rojo);
+    font-weight: bold;
+    width: 8rem;
+    line-height: 1.8rem;
+}
+
+.imagen_logo {
+    height: 24px;
+    width: 24px;
+}
+
+.imagen_bars {
+    width: 27px;
+    height: 27px;
+}
+
+.header__logo-link {
+    display: flex;
+    justify-content: center;
+    grid-gap: .5rem;
+}
+
+.header__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__ul {
+    padding: 0;
+    margin: 0;
+    margin-right: 10rem;
+    list-style: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--color-blanco);
+    display: block;
+    padding: 1rem;
+    font-size: 1.125rem;
+    font-weight: 800;
+}
+
+.nav-link:hover, .nav--link--active {
+    color: var(--color-rojo);
+}
+
+
+/* ---- Biografía home section ---- */
+
+
+.bio__pic-img {
+    background-image: url("../img/StanKub.png");
+    background-position-y: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.bio__text-desktop {
+    padding: 1.5rem;
+}
+
+.bio__text-desktop-quote {
+    font-size: 3.5rem;
+    color: var(--color-blanco);
+    font-weight: 800;
+    max-width: 40rem;
+    line-height: 4.5rem;
+    margin-right: 16.5rem;
+}
+
+.bio__texts-button {
+    display: inline-block;
+    font-size: 12px;
+    background-color: var(--color-blanco);
+    color: #000000;
+    border-radius: 100px;
+    padding: 6px 16px;
+    margin: .1rem;
+}
+
+.bio__full {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.bio__texts {
+    display: block;
+    justify-content: center;
+}
+
+.bio__texts-title {
+    color: var(--color-rojo);
+    font-size: 1.125rem;
+}
+
+.bio__texts-description {
+    color: var(--color-grisletra);
+    font-size: 12px;
+}
+
+.bio__button {
+    display: inline-block;
+    font-size: 12px;
+    background-color: var(--color-blanco);
+    color: #000000;
+    border-radius: 100px;
+    padding: 6px 16px;
+    transition: .3s
+}
+
+.bio__button:hover {
+    background-color: var(--color-rojo);
+    color: var(--color-blanco);
+}
+
+/* ---- Proyectos home section ---- */
+
+.container--grid {
+    display: flex;
+    justify-content: center;
+}
+
+.proyectos__head {
+    border-bottom: 1px solid var(--color-grisletra);
+}
+
+.proyectos__head-title {
+    padding-left: 16px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    color: var(--color-blanco);
+    font-size: 14px;
+}
+
+.proyectos__grid {
+    display: grid;
+    grid-gap: 12px 12px;
+    padding: 1rem;
+    margin-top: 10px;
+}
+
+.texto {
+    font-weight: 800;
+    color: var(--color-negro);
+}
+
+.position__text {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio__button-proyectos {
+    grid-column: 2 / 3;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.bio__button-more {
+    font-size: .75rem;
+    color: var(--color-grisletra);
+}
+
+.proyectos__titulo {
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+}
+
+.proyectos__titulo-grid {
+    font-weight: 800;
+    color: var(--color-grisletra);
+    font-size: 6rem;
+    padding: 1rem;
+    line-height: 7rem;
+    text-transform: uppercase;
+    margin-top: 4.6rem;
+}
+
+.Naranja {
+    background: var(--color-naranja);
+}
+.Blanco {
+    background: var(--color-blancopuro);
+}
+.Rojo {
+    background: var(--color-rojo);
+}
+.Azul {
+    background: var(--color-azul);
+}
+.Rosa {
+    background: var(--color-rosa);
+}
+.Verde {
+    background: var(--color-verde);
+}
+.oro {
+    background: var(--color-oro);
+}
+.gris {
+    background: var(--color-gris);
+}
+.purpura {
+    background: var(--color-purpura);
+}
+.marron {
+    background: var(--color-marron);
+}
+.amarillo {
+    background: var(--color-amarillo);
+}
+.aquamarina {
+    background: var(--color-aquamarina);
+}
+.celeste {
+    background: var(--color-celeste);
+}
+
+/* hovers */
+
+
+.position__text:hover {
+    opacity: 0;
+}
+
+.Naranja:hover {
+    background-image: url("../img/naranja.png");
+    background-size: cover;
+}
+
+.Blanco:hover {
+    background-image: url("../img/Barry.jpg");
+    background-size: cover;
+}
+
+.Rojo:hover {
+    background-image: url("../img/rojo.jpg");
+    background-size: cover;
+}
+
+.Azul:hover {
+    background-image: url("../img/odisea.png");
+    background-size: cover;
+    background-position-y: center ;
+}
+
+.Rosa:hover {
+    background-image: url("../img/Lolita.png");
+    background-size: cover;
+}
+
+.Verde:hover {
+    background-image: url("../img/chaqueta.jpg");
+    background-size: cover;
+    background-position-y: bottom;
+}
+
+.oro:hover {
+    background-image: url("../img/Senderos.jpg");
+    background-size: cover;
+}
+
+.gris:hover {
+    background-image: url("../img/miedo.jpg");
+    background-size: cover;
+}
+
+.purpura:hover {
+    background-image: url("../img/ojos.jpg");
+    background-size: cover;
+}
+
+.marron:hover {
+    background-image: url("../img/espartaco.jpg");
+    background-size: cover;
+}
+
+.amarillo:hover {
+    background-image: url("../img/Resplandor.jpg");
+    background-size: cover;
+    background-position-y: center;
+}
+
+.aquamarina:hover {
+    background-image: url("../img/beso.jpg");
+    background-size: cover;
+    background-position-y: center;
+}
+
+.celeste:hover {
+    background-image: url("../img/atraco.jpg");
+    background-size: cover;
+}
+
+/* ---- premios mobile home section ---- */
+
+
+.premios__head {
+    border-bottom: 1px solid var(--color-grisletra);
+}
+
+.premios__head-title {
+    padding-left: 16px;
+    margin-top: .5rem;
+    text-transform: uppercase;
+    color: var(--color-blanco);
+    font-size: 14px;
+}
+
+.premio__uno {
+    height: 138px;
+    background-image: url("../img/Premios/Rectangle19.png");
+    background-size: cover;
+}
+
+.premio__dos {
+    height: 138px;
+    background-image: url("../img/Premios/Rectangle18.png");
+    background-size: cover;
+}
+
+.premio__tres {
+    height: 138px;
+    background-image: url("../img/Premios/Rectangle20.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.premio__cuatro {
+    height: 138px;
+    background-image: url("../img/Premios/barrymobile.jpg");
+    background-size: cover;
+    background-position: center top;
+}
+
+.premio__cinco {
+    height: 138px;
+    background-image: url("../img/Premios/chaquetamobile.jpg");
+    background-size: cover;
+    background-position: center top;
+
+}
+
+.premio__seis {
+    height: 138px;
+    background-image: url("../img/Premios/rojo2mobile.jpg");
+    background-size: cover;
+    background-position: center top;
+}
+
+.premio__siete {
+    height: 138px;
+    background-image: url("../img/Premios/rojomobile3.png");
+    background-size: cover;
+    background-position: center top;
+}
+
+.premio__ocho {
+    height: 138px;
+    background-image: url("../img/Premios/rojomobile4.png");
+    background-size: cover;
+    background-position: center top;
+}
+
+.premio__nueve {
+    height: 138px;
+    background-image: url("../img/Premios/naranjamobile1.jpg");
+    background-size: cover;
+    background-position: center top;
+}
+
+.premio__diez {
+    height: 138px;
+    background-image: url("../img/Premios/naranjamobile2.jpg");
+    background-size: cover;
+    background-position: center top;
+}
+
+.premio__once {
+    height: 138px;
+    background-image: url("../img/Premios/rojomobile5.jpg");
+    background-size: cover;
+    background-position: center top;
+}
+
+.premio__doce {
+    height: 138px;
+    background-image: url("../img/Premios/rojomobile6.jpg");
+    background-size: cover;
+    background-position: center top;
+}
+
+.premio__trece {
+    height: 138px;
+    background-image: url("../img/Premios/ojosmobile.jpg");
+    background-size: cover;
+    background-position: center top;
+}
+
+.premio__catorce {
+    height: 138px;
+    background-image: url("../img/Premios/odiseamobile2.jpg");
+    background-size: cover;
+    background-position: center top;
+}
+
+.premio__quince {
+    height: 138px;
+    background-image: url("../img/Premios/barrymobile2.jpg");
+    background-size: cover;
+    background-position: center top;
+}
+
+.titulo-r {
+    color: var(--color-blanco);
+    font-size: 1.26rem;
+    line-height: 1.3rem;
+}
+
+.subtexto-r {
+    color: var(--color-grisletra);
+    font-size: .75rem;
+    line-height: .9rem;
+    margin-top: .4rem;
+}
+
+.titulo-l {
+    color: var(--color-blanco);
+    font-size: 1.26rem;
+    line-height: 1.3rem;
+    text-align: right;
+}
+
+.subtexto-l {
+    color: var(--color-grisletra);
+    font-size: .75rem;
+    line-height: .9rem;
+    margin-top: .4rem;
+    text-align: right;
+}
+
+.premios-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.premios-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* ---- Premios desktop home section ---- */
+
+
+.premios-desktop {
+    background-color: var(--color-negrogris);
+    height: 50rem;
+    margin-top: 4rem;
+}
+
+.premios__head-desktop {
+    display: flex;
+    margin-left: 13.2rem;
+    padding-top: 2rem;
+}
+
+.premios__head-titledesk {
+    color: var(--color-grisletra);
+    font-size: 2rem;
+}
+
+.premios__grid{
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(16, 340px);
+    grid-gap: 5rem;
+    overflow-x: auto;
+    padding-left: 13.2rem;
+    padding-bottom: 5rem;
+}
+
+.premios__item-uno {
+    height: 200px;
+    background-image: url("../img/Premios/Rectangle19.png");
+    background-size: cover;
+    background-position: center, top;
+    margin-bottom: 4rem;
+}
+
+.premios__item-dos {
+    height: 200px;
+    background-image: url("../img/Premios/Rectangle18.png");
+    background-size: cover;
+    margin-bottom: 4rem;
+}
+
+.premios__item-tres {
+    height: 200px;
+    background-image: url("../img/Premios/Rectangle20.png");
+    background-size: cover;
+    margin-bottom: 4rem;
+}
+
+.premios__item-cuatro {
+    height: 200px;
+    background-image: url("../img/Premios/Rectangle36.png");
+    background-size: cover;
+    margin-bottom: 4rem;
+}
+
+.premios__item-cinco {
+    height: 200px;
+    background-image: url("../img/Premios/rojo2mobile.jpg");
+    background-size: cover;
+    margin-bottom: 4rem;
+}
+
+.premios__item-seis {
+    height: 200px;
+    background-image: url("../img/Premios/rojomobile3.png");
+    background-size: cover;
+    margin-bottom: 4rem;
+}
+
+.premios__item-siete {
+    height: 200px;
+    background-image: url("../img/Premios/rojomobile4.png");
+    background-size: cover;
+    margin-bottom: 4rem;
+}
+
+.premios__item-ocho {
+    height: 200px;
+    background-image: url("../img/Premios/Rectangle14.png");
+    background-size: cover;
+    margin-bottom: 4rem;
+}
+
+.premios__item-nueve {
+    height: 200px;
+    background-image: url("../img/Premios/naranjamobile2.jpg");
+    background-size: cover;
+    margin-bottom: 4rem;
+}
+
+.premios__item-diez {
+    height: 200px;
+    background-image: url("../img/Premios/rojomobile5.jpg");
+    background-size: cover;
+    margin-bottom: 4rem;
+}
+
+.premios__item-once {
+    height: 200px;
+    background-image: url("../img/Premios/rojomobile6.jpg");
+    background-size: cover;
+    margin-bottom: 4rem;
+}
+
+.premios__item-doce {
+    height: 200px;
+    background-image: url("../img/Premios/Rectangle37.png");
+    background-size: cover;
+    margin-bottom: 4rem;
+}
+
+.premios__item-trece {
+    height: 200px;
+    background-image: url("../img/Premios/chaquetamobile.jpg");
+    background-size: cover;
+    margin-bottom: 4rem;
+}
+
+.premios__item-catorce {
+    height: 200px;
+    background-image: url("../img/Premios/odiseamobile2.jpg");
+    background-size: cover;
+    margin-bottom: 4rem;
+}
+
+.premios__item-quince {
+    height: 200px;
+    background-image: url("../img/Premios/barrymobile2.jpg");
+    background-size: cover;
+    margin-bottom: 4rem;
+}
+
+.premios-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+}
+
+.premios__tittle {
+    font-weight: 800;
+    color: var(--color-blanco);
+    font-size: 2rem;
+    line-height: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.premios__text {
+    color: var(--color-grisletra);
+    font-size: 1.2rem;
+}
+
+/*-------- SWiPER --------------*/
+
+const swiper = new Swiper('.swiper', {
+// Optional parameters
+   direction: 'vertical',
+loop: true,
+
+// If we need pagination
+   pagination: {
+       el: '.swiper-pagination',
+   },
+
+// Navigation arrows
+   navigation: {
+       nextEl: '.swiper-button-next',
+       prevEl: '.swiper-button-prev',
+   },
+
+// And if we need scrollbar
+   scrollbar: {
+       el: '.swiper-scrollbar',
+   },
+});
+
+
+/* ---- Testimonios home section ---- */
+
+
+.testimonios__head {
+    border-bottom: 1px solid var(--color-grisletra);
+}
+
+.testimonios__head-title {
+    padding-left: 16px;
+    margin-top: .5rem;
+    text-transform: uppercase;
+    color: var(--color-blanco);
+    font-size: 14px;
+}
+
+.testimonios__section_1 {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonios__section-text-bg1 {
+    position: relative;
+    background: var(--color-azul);
+}
+
+.testimonios__section-pic-nolan {
+    position: absolute;
+}
+
+.testimonios__section_2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.testimonios__section-text-bg2 {
+    position: relative;
+    background: var(--color-moka);
+}
+
+.testimonios__section-pic-scorssese {
+    position: absolute;
+}
+
+.testimonios__section-title-desk {
+    color: var(--color-blanco);
+    font-size: 2rem;
+    margin: 0;
+}
+
+.testimonios__section-text-subtitle-desk {
+    margin-bottom: 1rem;
+}
+
+/* ---- footer home section ---- */
+
+.footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--color-negro);
+    padding: 1rem;
+    border-top: 1px solid var(--color-grisletra);
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__web-link {
+    display: flex;
+    color: var(--color-blanco);
+}
+
+.footer__nav-ul {
+    display: flex;
+    grid-gap: 1rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* ---------------------------------------------- Página Biografía -------------------------------------------------- */
+
+
+.biografia__pic-img {
+    background-image: url("../img/BiografiaPic.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.biografia__text-desktop-quote {
+    font-weight: 800;
+}
+
+.biografia__texts {
+    background-color: var(--color-blanco);
+}
+
+.biografia__texts-description {
+    color: var(--color-negro);
+    font-size: 12px;
+    margin-bottom: 1rem;
+}
+
+.biografia__texts-title {
+    color: var(--color-rojo);
+    margin-bottom: 1rem;
+}
+
+/* ---------------------------------------------- Página proyectos mobile list -------------------------------------------------- */
+
+.proyectos__mobile-list {
+    margin-top: 3.9rem;
+}
+
+.proyecto-right {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.proyectos__link {
+    color: var(--color-negro);
+    font-weight: 800;
+    font-size: 1.12rem;
+}
+
+.proyectos__ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.proyectos__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    width: 320px;
+    padding: 1rem;
+}
+
+
+/* -----------------------------------------------Página detalles-------------------------------------------------------*/
+
+
+.odisea {
+    background: var(--color-azul);
+}
+
+.lolita {
+    background: var(--color-rosa);
+}
+
+.mecanica {
+    background: var(--color-naranja);
+}
+
+.barry {
+    background: var(--color-blancopuro);
+}
+
+.rojo {
+    background: var(--color-rojo);
+}
+
+.chaqueta {
+    background: var(--color-verde);
+}
+
+.gloria {
+    background: var(--color-oro);
+}
+
+.miedo {
+    background: var(--color-gris);
+}
+
+.ojos {
+    background: var(--color-purpura);
+}
+
+.espartaco {
+    background: var(--color-marron);
+}
+
+.resplandor {
+    background: var(--color-amarillo);
+}
+
+.asesino {
+    background: var(--color-aquamarina);
+}
+
+.atraco {
+    background: var(--color-celeste);
+}
+
+/* ---------------------------------------------- Página premioss detalle ------------------------------------------ */
+
+.premios__description-img {
+    width: 39rem;
+    height: 22rem;
+}
+
+.premios__description-image {
+    size: cover;
+}
+
+.premios {
+    margin-top: 6rem;
+    padding: 1rem;
+}
+.premios__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.premios__description-texts {
+    display:flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    width: 33rem;
+}
+
+.premios__description-title {
+    font-size: 3rem;
+    line-height: 3rem;
+    color: var(--color-blanco);
+    margin-bottom: 1rem;
+}
+
+.premios__description-subtitle {
+    font-size: 2rem;
+    color: var(--color-marron);
+    margin-bottom: 1rem;
+    line-height: 2rem;
+}
+.premios__description-text {
+    color: var(--color-blanco);
+    font-size: .8rem;
+}
+
+.premios__description-date {
+    font-size: 5rem;
+    font-weight: 800;
+    transform: rotate(135deg);
+    color: var(--color-blanco);
+}
+
+/* ---------------------------------------------- Página cookies ------------------------------------------ */
+
+
+.cookies__lock-icono {
+    width: 16px;
+    height: 16px;
+}
+
+
+.cookiesbutton_accept {
+    display: block;
+    border-radius: 4rem;
+    height: 2.8rem;
+    width:  18rem;
+}
+
+.cookiesbutton_pers {
+    display: block;
+    border-radius: 4rem;
+    height: 2.8rem;
+    margin: 1rem auto;
+    width:  18rem;
+}
+
+.popup--cerrar {
+    display: none;
+}
+
+.cookies__link {
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.popup__textos-text {
+    font-size: .7rem;
+}
+
+.popup__textos-head {
+    display: flex;
+    grid-gap: 1rem;
+    align-items: center;
+}
+
+
+
+
+/* Made by Antonio Sario Balada para Modulo de diseño web de la escuela de IDECREA */
+/* #Miprimeraweb */

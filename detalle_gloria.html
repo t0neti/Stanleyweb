@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Senderos de Gloria</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="theme-color" content="#3c790a">
+    <meta name="theme-color"
+          content="#ecd96f"
+          media="(prefers-color-scheme: light)">
+    <meta name="theme-color"
+          content="#0b3e05"
+          media="(prefers-color-scheme: dark)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Antonio">
+    <meta name="generator" content="Clojure">
+    <meta name="keywords" content="portafolio, cine, películas, testimonios, premios, biografía, Kubrick">
+    <meta name="description" content="Web diseñada para mostrar el trabajo de Stanley Kubric a lo largo de toda su carrera">
+    <meta property="og:image" content="img/screenshot.png">
+    <meta property="og:title" content="Stanley Kubrick">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@cuenta">
+    <meta name="twitter:creator" content="@cuenta">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css@v1.7/symbiosis.min.css">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 601px)">
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/gh/tanrax/FFNM@1.5.0/dist/ffnm.min.js"  integrity="sha384-qlI8XJcMcJMh52x4w9HA9ItB8KmW6pKaJXijVQFl6UvT1nGCH+U6Y7sbbc11HkCH" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class=" container container_main">
+    <header class="header header--home">
+        <div class="header__main">
+            <div class="header__logo">
+                <a href="home.html" class="header__logo-link">
+                    <img src="img/icons/aperture.svg" class="imagen_logo" alt="imagen-logo"><span class="header__logo-title">Stanley                        Kubrick</span>
+                </a>
+            </div>
+            <!-- menú hamburguesa con javascript -->
+            <button class="header__nav-menu--open" is-click="class:add('show--menu', '#nav')">
+                <img src="img/icons/menu.svg" class="imagen_bars" alt="imagen-menu">
+            </button>
+            <nav id="nav" class="header__nav">
+                <!-- botón cerrar -->
+                <div class="nav__button" is-click="class:remove('show--menu', '#nav')">
+                    <button class="header__button-nav--close"><span class="botonX">X</span></button>
+                </div>
+                <!-- Menú -->
+                <ul class="nav__ul">
+                    <li class="nav__item">
+                        <a href="biografia.html" class="nav__link">Biografía</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="proyectos.html" class="nav__link mobilepart">Proyectos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link desktoppart">Proyectos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="premios.html" class="nav__link mobilepart">Premios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="premios_detalle.html" class="nav__link desktoppart">Premios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Testimonios</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main gloria">
+        <section class="detalle">
+            <article class="detalle__item">
+                <div class="detalle__pic-img">
+                    <img src="./img/Senderos.jpg" alt="senderosimg" class="detalle-img">
+                </div>
+            </article>
+            <article class="detalle__item">
+                <div class="detalle_texts">
+                    <h2 class="detalle__texts-title">Senderos de Gloria</h2>
+                    <p class="detalle__texts-description">Paths of Glory (en Hispanoamérica, La patrulla infernal; en España, Senderos de gloria) es una película estadounidense de 1957, cuya acción se desarrolla durante la Primera Guerra Mundial. Dirigida por Stanley Kubrick y protagonizada por Kirk Douglas, está basada en la novela homónima de Humphrey Cobb, publicada en 1935.</p>
+
+                    <p class="detalle__texts-description">En 1992, la película fue considerada «cultural, histórica y estéticamente significativa» por la Biblioteca del Congreso de Estados Unidos y seleccionada para su preservación en el National Film Registry</p>
+
+                    <p class="detalle__texts-description">Inicialmente, la Paramount compró los derechos de la novela con la idea de trasladar la acción a la Rusia zarista, pero el proyecto no llegó a realizarse. El guion pasó por varios estudios en los que fue rechazado. La Metro-Goldwyn-Mayer estuvo cerca de asumir el proyecto, llegando a ofrecer el papel protagonista a Gregory Peck, que lo aceptó una vez Kirk Douglas había accedido a ello. Fue gracias a Douglas que el proyecto pudo salir adelante, pues cuando leyó el guion, hizo empleo de toda su influencia para que el proyecto avanzase, y, ya con su apoyo, la United Artist decidió financiarla con un corto presupuesto, de 850 000 USD</p>
+
+                    <p class="detalle__texts-description">Para la redacción del guion, el productor James B. Harris y Stanley Kubrick encargaron el trabajo al novelista Jim Thopmson y al guionista Calder Willingham. El guion original contenía un final feliz que acabó siendo modificado hasta ser el que aparece en la película, y nunca vio la luz, ya que se trataba más bien de un medio de preservar la conclusión real y de obtener el beneplácito de la productora, la United Artist, cuyos miembros, entusiasmados con la película, no releyeron el guion final y no protestaron por la modificación.</p>
+
+                    <p class="detalle__texts-description">La película se rodó en Baviera (Alemania), en los estudios Geiselgasteig (Bavaria Filmkurst Studios), ante las dificultades de ser rodada en Estados Unidos y, por supuesto, en Francia. Las secuencias bélicas y de las trincheras se rodaron entre abril y mayo de 1957 en las cercanías de Puchheim, cerca de Múnich</p>
+                </div>
+            </article>
+            <article class="detalle__item">
+                <div class="detalle__fecha-lateral">
+                    <hr class="leftborder"> <p class="detalle__fecha">1968</p><hr class="rightborder">
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="footer-nav">
+            <div class="footer-link">
+                <a class="footer__web-link" href="https://www.minecraft.net/es-es">www.stanleykubrick.com</a>
+            </div>
+            <ul class="footer__nav-ul">
+                <li class="footer__nav-li">
+                    <a href="#" class="footer__nav-link">
+                        <img class="footer-nav__icono" src="img/icons/twitter.svg" alt="twitter">
+                    </a>
+                </li>
+                <li class="footer__nav-li">
+                    <a href="#" class="footer-nav__link">
+                        <img class="footer-nav__icono" src="img/icons/instagram.svg" alt="instagram">
+                    </a>
+                </li>
+                <li class="footer-nav__li">
+                    <a href="#" class="footer-nav__link">
+                        <img class="footer-nav__icono" src="img/icons/facebook.svg" alt="facebook">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</div>
+</body>
+</html>

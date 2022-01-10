@@ -1,0 +1,309 @@
+/* Elementos que no se muestran en la versión mobile */
+
+.header__logo-title {
+    display: none;
+}
+
+.bio__text-desktop {
+    display: none;
+}
+
+.proyectos__grid-desktop {
+    display: none;
+}
+
+.proyectos__titulo {
+    display: none;
+}
+
+.premios-desktop {
+    display: none;
+}
+
+.testimonios__section-title-desk {
+    display: none;
+}
+
+.testimonios__section-text-subtitle-desk {
+    display: none;
+}
+
+.detalle__fecha {
+    display: none;
+}
+
+.desktoppart {
+    display: none;
+}
+
+.detalle__fecha-lateral {
+    display: none;
+}
+
+/* ---- Header mobile section ---- */
+
+.imagen_bars {
+    width: 27px;
+    height: 27px;
+}
+
+.header__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-negro);
+    transform: translateX(-100vw);
+    transition: .5s;
+}
+
+.show--menu {
+    transform: translateX(0);
+}
+
+.header__nav-menu--open {
+    text-align: right;
+    background-color: var(--color-negro);
+    border: none;
+}
+
+.header__button-nav--close {
+    background-color: var(--color-negro);
+    margin: 1rem;
+    border: none;
+}
+
+.botonX {
+    color: var(--color-blanco);
+}
+
+/* ---- Biografía home mobile section ---- */
+
+.bio__pic {
+    margin-top: 4.5rem;
+}
+
+.bio__pic-img {
+    height: 40vh;
+    max-height: 40rem;
+}
+
+/* Proyectos Section */
+
+.proyectos__grid {
+    grid-template-columns: repeat(auto-fill, minmax(138px, 1fr));
+}
+
+.Naranja {
+    height: 138px;
+}
+.Blanco {
+    height: 138px;
+}
+.Rojo {
+    height: 138px;
+}
+.Azul {
+    height: 138px;
+}
+.Rosa {
+    height: 138px;
+}
+.Verde {
+    height: 138px;
+}
+
+.texto {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.position__text {
+    padding: 1rem;
+}
+
+
+
+/* Testimonios */
+
+
+.testimonios__section {
+    margin-top: 4.6rem;
+}
+
+.testimonios__section-text-bg1 {
+    width:  220px;
+    height: 160px;
+    padding: .7rem;
+}
+
+.testimonios__section-pic-nolan {
+    left: 110px;
+    bottom: 110px;
+}
+
+.testimonios__section-text-title {
+    font-size: .87rem;
+    text-align: left;
+    width: 50%;
+    line-height: 1.1rem;
+    padding: .3rem;
+}
+.testimonios__section-text-quote {
+    font-size: .56rem;
+    font-style: italic;
+    line-height: .7rem;
+    padding: .3rem;
+}
+
+.corchetes_section1a {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    bottom: 147px;
+    right: 202px;
+}
+
+.corchetes_section1b {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 144px;
+    left: 203px;
+}
+
+.testimonios__section_2 {
+    margin-top: 5.44rem;
+}
+
+.testimonios__section-text-bg2 {
+    width:  220px;
+    height: 160px;
+    padding: .7rem;
+}
+
+.testimonios__section-pic-scorssese {
+    left: 110px;
+    bottom: 110px;
+}
+
+/* footer */
+
+.footer__web-link {
+    font-size: .6rem;
+}
+
+/* ---------------------------------------------- Página Biografía -------------------------------------------------- */
+
+
+.biografia__pic-img {
+    margin-top: 3.9rem;
+}
+
+.biografia__text-desktop {
+    padding-left: 1.2rem;
+}
+
+.biografia__text-desktop-quote {
+    font-size: 6rem;
+    color: var(--color-grisletra);
+    max-width: 60%;
+    line-height: 7rem;
+}
+
+.biografia__texts-title {
+    font-size: 1.87rem;
+    max-width: 80%;
+    line-height: 2rem;
+}
+
+.biografia__texts-description {
+    max-width: 80%;
+}
+
+.biografia__texts {
+    padding: 1rem;
+}
+
+
+
+/* ---------------------------------------------- Página proyectos detalle ------------------------------------------ */
+
+.detalle-img {
+    height: 360px;
+    width: 320px;
+    object-fit: cover;
+    margin-top: 3.9rem;
+    object-position: 50% 75%;
+}
+
+.detalle__texts-title {
+    color: var(--color-negro);
+    font-size: 1.87rem;
+    font-weight: 800;
+    max-width: 60%;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.detalle__texts-description {
+    color: var(--color-negro);
+    font-size: 12px;
+    max-width: 80%;
+    margin-bottom: 1rem;
+}
+
+.detalle_texts {
+    padding: 1rem;
+}
+
+
+
+/* ---------------------------------------------- cookies ----------------------------------------------------------- */
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-negro);
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+
+.popup__textos {
+    position: absolute;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+}
+
+.popup__textos-text {
+    color: var(--color-blanco);
+}
+
+.popup__text-cookies {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--color-blanco);
+}
+
+.cookiesbutton_accept {
+    margin-top: 6rem;
+}
+
+.cookiesbutton_pers {
+    border: 2px solid var(--color-blanco);
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+}
+
+.popup--cerrar {
+    display: none;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Atraco Perfecto</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="theme-color" content="#3c790a">
+    <meta name="theme-color"
+          content="#ecd96f"
+          media="(prefers-color-scheme: light)">
+    <meta name="theme-color"
+          content="#0b3e05"
+          media="(prefers-color-scheme: dark)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Antonio">
+    <meta name="generator" content="Clojure">
+    <meta name="keywords" content="portafolio, cine, películas, testimonios, premios, biografía, Kubrick">
+    <meta name="description" content="Web diseñada para mostrar el trabajo de Stanley Kubric a lo largo de toda su carrera">
+    <meta property="og:image" content="img/screenshot.png">
+    <meta property="og:title" content="Stanley Kubrick">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@cuenta">
+    <meta name="twitter:creator" content="@cuenta">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css@v1.7/symbiosis.min.css">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 601px)">
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/gh/tanrax/FFNM@1.5.0/dist/ffnm.min.js"  integrity="sha384-qlI8XJcMcJMh52x4w9HA9ItB8KmW6pKaJXijVQFl6UvT1nGCH+U6Y7sbbc11HkCH" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class=" container container_main">
+    <header class="header header--home">
+        <div class="header__main">
+            <div class="header__logo">
+                <a href="home.html" class="header__logo-link">
+                    <img src="img/icons/aperture.svg" class="imagen_logo" alt="imagen-logo"><span class="header__logo-title">Stanley                        Kubrick</span>
+                </a>
+            </div>
+            <!-- menú hamburguesa con javascript -->
+            <button class="header__nav-menu--open" is-click="class:add('show--menu', '#nav')">
+                <img src="img/icons/menu.svg" class="imagen_bars" alt="imagen-menu">
+            </button>
+            <nav id="nav" class="header__nav">
+                <!-- botón cerrar -->
+                <div class="nav__button" is-click="class:remove('show--menu', '#nav')">
+                    <button class="header__button-nav--close"><span class="botonX">X</span></button>
+                </div>
+                <!-- Menú -->
+                <ul class="nav__ul">
+                    <li class="nav__item">
+                        <a href="biografia.html" class="nav__link">Biografía</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="proyectos.html" class="nav__link mobilepart">Proyectos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link desktoppart">Proyectos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="premios.html" class="nav__link mobilepart">Premios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="premios_detalle.html" class="nav__link desktoppart">Premios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Testimonios</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<main class="main atraco">
+    <section class="detalle">
+        <article class="detalle__item">
+            <div class="detalle__pic-img">
+                <img src="./img/atraco.jpg" alt="atracoimg" class="detalle-img">
+            </div>
+        </article>
+        <article class="detalle__item">
+            <div class="detalle_texts">
+                <h2 class="detalle__texts-title">Atraco perfecto</h2>
+                <p class="detalle__texts-description">The Killing (en España, Atraco perfecto; en Hispanoamérica, Casta de malditos) es una película estadounidense de 1956 dirigida por Stanley Kubrick y con Sterling Hayden en el papel principal. Está basada en la novela de 1955 Clean Break, escrita por Lionel White y reeditada después con el mismo título de la película.</p>
+
+                <p class="detalle__texts-description">La película The Killing, tercer trabajo de Kubrick como director, narra un robo meticulosamente planeado que desemboca en una masacre. El plan comienza a tambalearse cuando Sherry Peatty, la mujer de uno de los ladrones, manipula a su marido para que le revele los detalles del atraco y seduce a su amante para que le robe el botín a Johnny, el cerebro del plan.</p>
+
+                <p class="detalle__texts-description"> Cinco años en prisión dan para muchas ideas. Este es el tiempo que ha necesitado Johnny Clay (Sterling Hayden) para urdir el golpe perfecto. Un atraco minuciosamente preparado a un hipódromo, del que podría sacar la sustanciosa cantidad de dos millones de dólares. Tras salir de la cárcel se buscará un grupo de fiar. Cinco hombres. Nada de delincuentes habituales. Gente corriente, con empleos mal remunerados y con ganas de cambiar su estilo de vida radicalmente. Perdedores natos que se dejen embaucar, a la mínima de cambio, por sus deslumbrantes planes. Especialmente sabiendo que el plan es hacerse con dos millones de dólares en un robo en las oficinas del hipódromo en el cual "nadie sufrirá daño", en la operación le acompañan Randy Kennan (Ted de Corsia), un policía corrupto; Mike O'Reilly (Joe Sawyer), un hombre que necesita imperiosamente el dinero para su esposa enferma; y George Peatty (Elisha Cook Jr.), un tipo poco consistente que ve por todos lados pretendientes de su atractiva mujer Sherry (Marie Windsor). Poco después, al grupo se unirá Nikki Arane (Timothy Carey), un asesino profesional que deberá disparar en el hipódromo a Relámpago Rojo, un famoso caballo que participará en la séptima carrera.</p>
+
+                <p class="detalle__texts-description">Será el momento, gracias a la confusión creada, que aprovechará la banda para desvalijar la caja fuerte donde están los dos millones de dólares. El plan se ejecuta a la perfección, pero Nikki muere a consecuencia de los disparos de un vigilante del aparcadero, y a pesar de toda su previsión, Clay y sus hombres han descuidado una cosa: Sherry Peatty, una mujer hambrienta de dinero y traicionera, que planea dar su propio golpe financiero.
+
+                    El resto de la banda, una vez dado el golpe, se pelea por el dinero y nadie puede retenerlo. Johnny y su novia Fay (Coleen Gray) se encuentran con todo el botín en el aeropuerto rumbo a Boston. Pero todo atraco perfecto tiene alguna imperfección imprevisible.</p>
+            </div>
+        </article>
+        <article class="detalle__item">
+            <div class="detalle__fecha-lateral">
+                <hr class="leftborder"> <p class="detalle__fecha">1968</p><hr class="rightborder">
+            </div>
+        </article>
+    </section>
+</main>
+    <footer class="footer">
+        <nav class="footer-nav">
+            <div class="footer-link">
+                <a class="footer__web-link" href="https://www.minecraft.net/es-es">www.stanleykubrick.com</a>
+            </div>
+            <ul class="footer__nav-ul">
+                <li class="footer__nav-li">
+                    <a href="#" class="footer__nav-link">
+                        <img class="footer-nav__icono" src="img/icons/twitter.svg" alt="twitter">
+                    </a>
+                </li>
+                <li class="footer__nav-li">
+                    <a href="#" class="footer-nav__link">
+                        <img class="footer-nav__icono" src="img/icons/instagram.svg" alt="instagram">
+                    </a>
+                </li>
+                <li class="footer-nav__li">
+                    <a href="#" class="footer-nav__link">
+                        <img class="footer-nav__icono" src="img/icons/facebook.svg" alt="facebook">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</div>
+</body>
+</html>

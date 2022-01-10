@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Espartaco</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="theme-color" content="#3c790a">
+    <meta name="theme-color"
+          content="#ecd96f"
+          media="(prefers-color-scheme: light)">
+    <meta name="theme-color"
+          content="#0b3e05"
+          media="(prefers-color-scheme: dark)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Antonio">
+    <meta name="generator" content="Clojure">
+    <meta name="keywords" content="portafolio, cine, películas, testimonios, premios, biografía, Kubrick">
+    <meta name="description" content="Web diseñada para mostrar el trabajo de Stanley Kubric a lo largo de toda su carrera">
+    <meta property="og:image" content="img/screenshot.png">
+    <meta property="og:title" content="Stanley Kubrick">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@cuenta">
+    <meta name="twitter:creator" content="@cuenta">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css@v1.7/symbiosis.min.css">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 601px)">
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/gh/tanrax/FFNM@1.5.0/dist/ffnm.min.js"  integrity="sha384-qlI8XJcMcJMh52x4w9HA9ItB8KmW6pKaJXijVQFl6UvT1nGCH+U6Y7sbbc11HkCH" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class=" container container_main">
+    <header class="header header--home">
+        <div class="header__main">
+            <div class="header__logo">
+                <a href="home.html" class="header__logo-link">
+                    <img src="img/icons/aperture.svg" class="imagen_logo" alt="imagen-logo"><span class="header__logo-title">Stanley                        Kubrick</span>
+                </a>
+            </div>
+            <!-- menú hamburguesa con javascript -->
+            <button class="header__nav-menu--open" is-click="class:add('show--menu', '#nav')">
+                <img src="img/icons/menu.svg" class="imagen_bars" alt="imagen-menu">
+            </button>
+            <nav id="nav" class="header__nav">
+                <!-- botón cerrar -->
+                <div class="nav__button" is-click="class:remove('show--menu', '#nav')">
+                    <button class="header__button-nav--close"><span class="botonX">X</span></button>
+                </div>
+                <!-- Menú -->
+                <ul class="nav__ul">
+                    <li class="nav__item">
+                        <a href="biografia.html" class="nav__link">Biografía</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="proyectos.html" class="nav__link mobilepart">Proyectos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link desktoppart">Proyectos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="premios.html" class="nav__link mobilepart">Premios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="premios_detalle.html" class="nav__link desktoppart">Premios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Testimonios</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main espartaco">
+        <section class="detalle">
+            <article class="detalle__item">
+                <div class="detalle__pic-img">
+                    <img src="./img/espartaco.jpg" alt="espartacoimg" class="detalle-img">
+                </div>
+            </article>
+            <article class="detalle__item">
+                <div class="detalle_texts">
+                    <h2 class="detalle__texts-title">Espartaco</h2>
+                    <p class="detalle__texts-description">Espartaco (Spartacus) es una película estadounidense de 1960 dirigida por Stanley Kubrick y basada en la novela histórica homónima de Howard Fast. Contó con la actuación de Kirk Douglas, Laurence Olivier, Jean Simmons, John Gavin, Charles Laughton, Peter Ustinov, Herbert Lom, Woody Strode, y Tony Curtis. El guion, escrito por Dalton Trumbo, retrata la figura de Espartaco y los hechos ocurridos durante la tercera guerra servil. La película fue galardonada con 4 premios Óscar, y otros 4 premios más.</p>
+
+                    <p class="detalle__texts-description">Forma parte del AFI's 10 Top 10 en la categoría de "Películas épicas". En el 2017, la película fue considerada «cultural, histórica y estéticamente significativa» por la Biblioteca del Congreso de Estados Unidos y seleccionada para su preservación en el National Film Registry.</p>
+
+                    <p class="detalle__texts-description">Al principio la película iba a ser dirigida por Anthony Mann. Sin embargo él se peleó con Kirk Douglas, por lo que finalmente Kubrick ocupó su lugar, el cual casi también abandona. Cabe también destacar que Jean Simmons accedió interpretar el papel de Varinia después de que éste hubiese sido rechazado por otras actrices como Elsa Martinelli, Ingrid Bergman y Jeanne Moreau. Peña del Cerro (Colmenar Viejo) en ella se filmó una de las batallas de la película. Fue rodada en diversas localizaciones de España, entre ellas: la ciudad española de Alcalá de Henares (concretamente en la Puerta de Madrid, el Paseo de los Curas y los Cerros de Alcalá); o la Peña del Cerro en Colmenar Viejo. También se filmó en los estudios de la Universal. En la posproducción, Douglas era consciente de que Kubrick tenía la intención de atribuirse el guion de la película, aunque este había sido adaptado de la novela de Howard Fast por Dalton Trumbo, puesto en la lista negra de Hollywood durante el macartismo. Douglas, poderoso públicamente, se opuso a la exclusión de Trumbo, y cuando el nombre de este apareció en los créditos, la lista negra de Hollywood fue definitivamente cancelada</p>
+
+                    <p class="detalle__texts-description">Después de su estreno en 1960 fue proyectada nuevamente en 1967, con 23 minutos menos que la proyección original, y otra vez, en 1991, en la que se restauraban esos 23 minutos más otros 14 que habían sido censurados antes de la proyección original. La adición incluía varias secuencias de batallas violentas, así como una escena en el baño en la que Craso, general y patricio romano, en un intento de seducir a su esclavo Antonino (T. Curtis), usa la analogía de «comer ostras» y «comer caracoles» para expresar su opinión de que la querencia carnal es más cuestión de gusto que de moralidad. Cuando la película fue restaurada, dos años después de la muerte de Olivier, faltaba el audio original del diálogo de esta escena, por lo que tuvo que redoblarse. Tony Curtis pudo doblar su papel, pero la voz de Laurence Olivier tuvo que ser imitada por Anthony Hopkins.</p>
+                </div>
+            </article>
+            <article class="detalle__item">
+                <div class="detalle__fecha-lateral">
+                    <hr class="leftborder"> <p class="detalle__fecha">1968</p><hr class="rightborder">
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="footer-nav">
+            <div class="footer-link">
+                <a class="footer__web-link" href="https://www.minecraft.net/es-es">www.stanleykubrick.com</a>
+            </div>
+            <ul class="footer__nav-ul">
+                <li class="footer__nav-li">
+                    <a href="#" class="footer__nav-link">
+                        <img class="footer-nav__icono" src="img/icons/twitter.svg" alt="twitter">
+                    </a>
+                </li>
+                <li class="footer__nav-li">
+                    <a href="#" class="footer-nav__link">
+                        <img class="footer-nav__icono" src="img/icons/instagram.svg" alt="instagram">
+                    </a>
+                </li>
+                <li class="footer-nav__li">
+                    <a href="#" class="footer-nav__link">
+                        <img class="footer-nav__icono" src="img/icons/facebook.svg" alt="facebook">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</div>
+</body>
+</html>

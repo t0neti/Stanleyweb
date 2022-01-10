@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>La chaqueta metálica</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="theme-color" content="#3c790a">
+    <meta name="theme-color"
+          content="#ecd96f"
+          media="(prefers-color-scheme: light)">
+    <meta name="theme-color"
+          content="#0b3e05"
+          media="(prefers-color-scheme: dark)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Antonio">
+    <meta name="generator" content="Clojure">
+    <meta name="keywords" content="portafolio, cine, películas, testimonios, premios, biografía, Kubrick">
+    <meta name="description" content="Web diseñada para mostrar el trabajo de Stanley Kubric a lo largo de toda su carrera">
+    <meta property="og:image" content="img/screenshot.png">
+    <meta property="og:title" content="Stanley Kubrick">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@cuenta">
+    <meta name="twitter:creator" content="@cuenta">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css@v1.7/symbiosis.min.css">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 601px)">
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/gh/tanrax/FFNM@1.5.0/dist/ffnm.min.js"  integrity="sha384-qlI8XJcMcJMh52x4w9HA9ItB8KmW6pKaJXijVQFl6UvT1nGCH+U6Y7sbbc11HkCH" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class=" container container_main">
+    <header class="header header--home">
+        <div class="header__main">
+            <div class="header__logo">
+                <a href="home.html" class="header__logo-link">
+                    <img src="img/icons/aperture.svg" class="imagen_logo" alt="imagen-logo"><span class="header__logo-title">Stanley                        Kubrick</span>
+                </a>
+            </div>
+            <!-- menú hamburguesa con javascript -->
+            <button class="header__nav-menu--open" is-click="class:add('show--menu', '#nav')">
+                <img src="img/icons/menu.svg" class="imagen_bars" alt="imagen-menu">
+            </button>
+            <nav id="nav" class="header__nav">
+                <!-- botón cerrar -->
+                <div class="nav__button" is-click="class:remove('show--menu', '#nav')">
+                    <button class="header__button-nav--close"><span class="botonX">X</span></button>
+                </div>
+                <!-- Menú -->
+                <ul class="nav__ul">
+                    <li class="nav__item">
+                        <a href="biografia.html" class="nav__link">Biografía</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="proyectos.html" class="nav__link mobilepart">Proyectos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link desktoppart">Proyectos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="premios.html" class="nav__link mobilepart">Premios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="premios_detalle.html" class="nav__link desktoppart">Premios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Testimonios</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main chaqueta">
+        <section class="detalle">
+            <article class="detalle__item">
+                <div class="detalle__pic-img">
+                    <img src="./img/chaqueta.jpg" alt="chaquetaimg" class="detalle-img">
+                </div>
+            </article>
+            <article class="detalle__item">
+                <div class="detalle_texts">
+                    <h2 class="detalle__texts-title">La chaqueta metálica</h2>
+                    <p class="detalle__texts-description">Full Metal Jacket (conocida en Hispanoamérica como Nacido para matar o Cara de guerra y en España como La chaqueta metálica) es una película bélica anglo-estadounidense dirigida por Stanley Kubrick, distribuida por Warner Bros., y estrenada en 1987. Basada en la novela Un chaleco de acero, del escritor Gustav Hasford, quien estuvo como periodista de guerra en el conflicto de Vietnam, tiene como protagonistas a Matthew Modine, R. Lee Ermey, Vincent D'Onofrio y Adam Baldwin. La historia sigue a un pelotón de infantes del Cuerpo de Marines de los Estados Unidos a través de su entrenamiento en el centro Marine Corps Recruit Depot Parris Island, en Carolina del Sur. Desde ese lugar, se centra principalmente en dos soldados, Bufón (Modine) y Patoso (D'Onofrio), que tienen que lidiar con su instructor, el sargento de artillería Hartman (Ermey), quien tiene talante abusivo. Por otro lado, la segunda mitad de la película retrata las experiencias de dos de los marines del pelotón en las ciudades vietnamitas de Đà Nẵng y Huế, durante la ofensiva del Tet, en el contexto de la guerra de Vietnam.</p>
+
+                    <p class="detalle__texts-description">En un principio Kubrick quería hacer una película sobre el Holocausto, aunque tras hablarlo con el guionista Michael Herr, cambió de idea en favor de una historia sobre la guerra de Vietnam. El director descubrió la novela Un chaleco de acero y se puso en contacto con Hasford en 1985, a pesar de que llevaba estudiando tanto el libro como aspectos sobre la guerra desde 1983, tras haberlo leído un año antes. Hasford, Herr y Kubrick se unieron para elaborar el guion; Hasford comunicaba sus ideas por teléfono y no vio a Kubrick en persona hasta después de redactado el guion. Kubrick eligió el nombre en referencia a la munición full metal jacket, pues pensó que el del libro no sería adecuado para la película.</p>
+
+                    <p class="detalle__texts-description">El rodaje se produjo en Inglaterra entre 1985 y 1986. Kubrick consiguió cuatro tanques M41, procedentes de un coronel del ejército belga, y varios helicópteros Westland Wessex pintados de verde marino para hacerlos pasar por los Sikorsky H-34 Choctaw. También adquirió algunas armas como rifles, escopetas lanzagranadas M79 y ametralladoras M60. Se usó una fábrica de gas en desuso llamada Beckton Gas Works en representación de Huế después de los ataques, así como una antigua estación de la Real Fuerza Aérea británica y una base del ejército británico para el campo de entrenamiento de Parris Island. La composición de la banda sonora recayó en la hija de Stanley, Vivian Kubrick, quien usó el alias «Abigail Mead» para crear una lista con canciones como «Paint It, Black», compuesta por el grupo inglés The Rolling Stones, para los créditos finales.</p>
+
+                    <p class="detalle__texts-description">Tuvo su preestreno el 17 de junio de 1987, en la ciudad estadounidense de Beverly Hills (California). Ermey recibió elogios por parte de la crítica tras su interpretación del sargento Hartman; escribió gran parte de sus frases y no estaba programado que ocupara el papel, pues este recaía en Tim Colceri, relegado a interpretar a un artillero de helicóptero después de que Kubrick se fijara en Ermey. La película obtuvo una recaudación de 46,35 millones de dólares en sus primeras semanas de estreno, y alrededor de 120 millones en todo el mundo hasta 1998. Kubrick, Herr y Hasford recibieron una nominación a los premios Óscar en la categoría al mejor guion adaptado, así como otros mismos resultados y algunas consecuciones en otros certámenes.</p>
+                </div>
+            </article>
+            <article class="detalle__item">
+                <div class="detalle__fecha-lateral">
+                    <hr class="leftborder"> <p class="detalle__fecha">1968</p><hr class="rightborder">
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="footer-nav">
+            <div class="footer-link">
+                <a class="footer__web-link" href="https://www.minecraft.net/es-es">www.stanleykubrick.com</a>
+            </div>
+            <ul class="footer__nav-ul">
+                <li class="footer__nav-li">
+                    <a href="#" class="footer__nav-link">
+                        <img class="footer-nav__icono" src="img/icons/twitter.svg" alt="twitter">
+                    </a>
+                </li>
+                <li class="footer__nav-li">
+                    <a href="#" class="footer-nav__link">
+                        <img class="footer-nav__icono" src="img/icons/instagram.svg" alt="instagram">
+                    </a>
+                </li>
+                <li class="footer-nav__li">
+                    <a href="#" class="footer-nav__link">
+                        <img class="footer-nav__icono" src="img/icons/facebook.svg" alt="facebook">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Barry Lindon</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="theme-color" content="#3c790a">
+  <meta name="theme-color"
+        content="#ecd96f"
+        media="(prefers-color-scheme: light)">
+  <meta name="theme-color"
+        content="#0b3e05"
+        media="(prefers-color-scheme: dark)">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta name="author" content="Antonio">
+  <meta name="generator" content="Clojure">
+  <meta name="keywords" content="portafolio, cine, películas, testimonios, premios, biografía, Kubrick">
+  <meta name="description" content="Web diseñada para mostrar el trabajo de Stanley Kubric a lo largo de toda su carrera">
+  <meta property="og:image" content="img/screenshot.png">
+  <meta property="og:title" content="Stanley Kubrick">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@cuenta">
+  <meta name="twitter:creator" content="@cuenta">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="400">
+  <meta property="og:image:height" content="300">
+  <meta property="og:image:alt" content="">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css@v1.7/symbiosis.min.css">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+  <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 601px)">
+  <!-- javascript -->
+  <script src="https://cdn.jsdelivr.net/gh/tanrax/FFNM@1.5.0/dist/ffnm.min.js"  integrity="sha384-qlI8XJcMcJMh52x4w9HA9ItB8KmW6pKaJXijVQFl6UvT1nGCH+U6Y7sbbc11HkCH" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class=" container container_main">
+  <header class="header header--home">
+    <div class="header__main">
+      <div class="header__logo">
+        <a href="home.html" class="header__logo-link">
+          <img src="img/icons/aperture.svg" class="imagen_logo" alt="imagen-logo"><span class="header__logo-title">Stanley                        Kubrick</span>
+        </a>
+      </div>
+      <!-- menú hamburguesa con javascript -->
+      <button class="header__nav-menu--open" is-click="class:add('show--menu', '#nav')">
+        <img src="img/icons/menu.svg" class="imagen_bars" alt="imagen-menu">
+      </button>
+      <nav id="nav" class="header__nav">
+        <!-- botón cerrar -->
+        <div class="nav__button" is-click="class:remove('show--menu', '#nav')">
+          <button class="header__button-nav--close"><span class="botonX">X</span></button>
+        </div>
+        <!-- Menú -->
+        <ul class="nav__ul">
+          <li class="nav__item">
+            <a href="biografia.html" class="nav__link">Biografía</a>
+          </li>
+          <li class="nav__item">
+            <a href="proyectos.html" class="nav__link mobilepart">Proyectos</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link desktoppart">Proyectos</a>
+          </li>
+          <li class="nav__item">
+            <a href="premios.html" class="nav__link mobilepart">Premios</a>
+          </li>
+          <li class="nav__item">
+            <a href="premios_detalle.html" class="nav__link desktoppart">Premios</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Testimonios</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main barry">
+    <section class="detalle">
+      <article class="detalle__item">
+        <div class="detalle__pic-img">
+          <img src="./img/Barry.jpg" alt="BarryLindon" class="detalle-img">
+        </div>
+      </article>
+      <article class="detalle__item">
+        <div class="detalle_texts">
+          <h2 class="detalle__texts-title">Barry Lindon</h2>
+          <p class="detalle__texts-description">Barry Lyndon es una película angloamericana dramática-histórica de 1975 escrita y dirigida por Stanley Kubrick; y protagonizada por Ryan O'Neal, Marisa Berenson, Patrick Magee y Hardy Krüger. Está basada en la novela La suerte de Barry Lyndon de William Makepeace Thackeray, publicada en 1844. La cinta describe las aventuras ficticias de un personaje irlandés durante el siglo XVIII, y está ambientado en parte durante la Guerra de los Siete Años. También es prácticamente un documental de cómo vivía la gente en Irlanda e Inglaterra de ese período: sus modales y moral, sus valores y amores, sus duelos personales y batallas a gran escala. Los exteriores fueron rodados en diversas localizaciones de Irlanda, Inglaterra y Alemania. El cineasta Martin Scorsese citó a Barry Lyndon como la mejor película dentro de su género y su película favorita del director, sirviendo de inspiración para su famoso film La edad de la inocencia.</p>
+
+          <p class="detalle__texts-description">La película ganó cuatro premios Óscar a la Mejor Dirección Artística, Mejor Fotografía, Mejor Vestuario y Mejor Banda Sonora, y fue nominada también a Mejor Película, Mejor Director y Mejor Guion Adaptado. Además Kubrick ganó el premio de la Academia Británica de Cine y Televisión (BAFTA) a la Mejor Dirección y John Alcott ganó el de Mejor Fotografía, y la cinta fue nominado a Mejor Película, Mejor Dirección Artística y Mejor Vestuario. En numerosas encuestas, entre ellas del Village Voice (1999), Sight & Sound (2002), Time (2005) y la BBC, se la ha considerado una de las mejores películas jamás rodada</p>
+
+          <p class="detalle__texts-description">El reparto de la película es uno de los puntos en los que algunos aficionados y críticos coinciden en señalar como no ser el más idóneo. Lo cierto es que la elección de O'Neal para interpretar al protagonista puede no gustar a algunos, principalmente por la escasa expresividad del actor, el director buscaba un actor no excesivamente carismático que pasara bien por lo que el personaje es, un vividor con escasas virtudes morales. Del resto del reparto destaca el trabajo de Berenson, que da vida a Lady Lyndon, la condesa a la que Barry seduce y de la que obtiene su noble apellido. El resto realiza una buena labor. A pesar de las críticas, es la película por la que se considera el mejor trabajo de ambos protagonistas.</p>
+
+          <p class="detalle__texts-description"> El afamado director de cine Martin Scorsese ha citado a Barry Lyndon como su película favorita de Stanley Kubrick. Algunas citas del guion de esta película han aparecido en otras obras cinematográficas tan dispares como Los duelistas de Ridley Scott, La edad de la inocencia del propio Scorsese, Rushmore de Wes Anderson y Dogville de Lars von Trier.</p>
+        </div>
+      </article>
+      <article class="detalle__item">
+        <div class="detalle__fecha-lateral">
+          <hr class="leftborder"> <p class="detalle__fecha">1968</p><hr class="rightborder">
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class="footer">
+    <nav class="footer-nav">
+      <div class="footer-link">
+        <a class="footer__web-link" href="https://www.minecraft.net/es-es">www.stanleykubrick.com</a>
+      </div>
+      <ul class="footer__nav-ul">
+        <li class="footer__nav-li">
+          <a href="#" class="footer__nav-link">
+            <img class="footer-nav__icono" src="img/icons/twitter.svg" alt="twitter">
+          </a>
+        </li>
+        <li class="footer__nav-li">
+          <a href="#" class="footer-nav__link">
+            <img class="footer-nav__icono" src="img/icons/instagram.svg" alt="instagram">
+          </a>
+        </li>
+        <li class="footer-nav__li">
+          <a href="#" class="footer-nav__link">
+            <img class="footer-nav__icono" src="img/icons/facebook.svg" alt="facebook">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+</div>
+</body>
+</html>

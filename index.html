@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Proyecto Máster Modulo 1</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="theme-color" content="#3c790a">
+    <meta name="theme-color"
+          content="#ecd96f"
+          media="(prefers-color-scheme: light)">
+    <meta name="theme-color"
+          content="#0b3e05"
+          media="(prefers-color-scheme: dark)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Antonio">
+    <meta name="generator" content="Clojure">
+    <meta name="keywords" content="portafolio, cine, películas, testimonios, premios, biografía, Kubrick">
+    <meta name="description" content="Web diseñada para mostrar el trabajo de Stanley Kubric a lo largo de toda su carrera">
+    <meta property="og:image" content="img/screenshot.png">
+    <meta property="og:title" content="Stanley Kubrick">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@cuenta">
+    <meta name="twitter:creator" content="@cuenta">
+     <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css@v1.7/symbiosis.min.css">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 601px)">
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- javascript -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/tanrax/FFNM@1.5.0/dist/ffnm.min.js"  integrity="sha384-qlI8XJcMcJMh52x4w9HA9ItB8KmW6pKaJXijVQFl6UvT1nGCH+U6Y7sbbc11HkCH" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class=" container container_main">
+<header class="header header--home">
+    <div class="header__main">
+            <div class="header__logo">
+                <a href="home.html" class="header__logo-link">
+                    <img src="img/icons/aperture.svg" class="imagen_logo" alt="imagen-logo"><span class="header__logo-title">Stanley                        Kubrick</span>
+                </a>
+            </div>
+        <!-- menú hamburguesa con javascript -->
+            <button class="header__nav-menu--open" is-click="class:add('show--menu', '#nav')">
+                <img src="img/icons/menu.svg" class="imagen_bars" alt="imagen-menu">
+            </button>
+        <nav id="nav" class="header__nav">
+                <!-- botón cerrar -->
+            <div class="nav__button" is-click="class:remove('show--menu', '#nav')">
+                <button class="header__button-nav--close"><span class="botonX">X</span></button>
+            </div>
+            <!-- Menú -->
+            <ul class="nav__ul">
+                <li class="nav__item">
+                    <a href="biografia.html" class="nav__link">Biografía</a>
+                </li>
+                <li class="nav__item">
+                    <a href="proyectos.html" class="nav__link mobilepart">Proyectos</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#proyectos" class="nav__link desktoppart">Proyectos</a>
+                </li>
+                <li class="nav__item">
+                    <a href="premios.html" class="nav__link mobilepart">Premios</a>
+                </li>
+                <li class="nav__item">
+                    <a href="premios_detalle.html" class="nav__link desktoppart">Premios</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#testimonios" class="nav__link testimonios-a">Testimonios</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <main class="main">
+        <section class="popup" id="popup">
+            <div class="popup__textos">
+                <div class="popup__textos-full">
+                    <div class="popup__textos-head">
+                        <p class="popup__text-cookies">Tu privacidad</p>
+                        <img class="cookies__lock-icono" src="img/icons/lock.svg" alt="lock">
+                    </div>
+                    <p class="popup__textos-text">Utilizamos herramientas para personalizar el contenido, adaptar los anuncios y medir su eficacia, así como para ofrecer una mejor experiencia. Al hacer clic en Aceptar o al activar una opción en la configuración de la privacidad, aceptas lo establecido en nuestra<a href="" class="cookies__link"> Política de Cookies</a>. Ve a personalizar para gestionar las opciones.</p>
+                </div>
+                <div class="popup__buttons">
+                    <button class="cookiesbutton_accept" is-click="class:add('popup--cerrar', '#popup')">Aceptar</button>
+                    <a href="cookies_personalizadas.html">
+                    <button class="cookiesbutton_pers" is-click="class:add('popup--cerrar', '#popup')">Personalizar</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="bio" id="bio">
+            <div class="bio__pic">
+                <div class="bio__pic-img">
+                    <div class="bio__text-desktop">
+                        <p class="bio__text-desktop-quote">"Si puede ser escrito o pensado, puede ser filmado."</p>
+                        <p class="bio__texts-button">
+                            <a href="biografia.html" class="bio__button-desktop" role="button">Ver biografía</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="bio__full">
+                    <div class="bio__texts">
+                        <h2 class="bio__texts-title">Stanley Kubrick</h2>
+                        <p class="bio__texts-description">Director y cineasta</p>
+                    </div>
+                    <p class="bio__texts-button-mobile">
+                        <a href="biografia.html" class="bio__button">Ver biografía</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="proyectos" id="proyectos">
+            <div class="proyectos__head">
+                <h1 class="proyectos__head-title">proyectos</h1>
+            </div>
+            <div class="container container--grid">
+                <div class="proyectos__grid">
+                    <div class="proyectos__titulo">
+                        <p class="proyectos__titulo-grid">Proyectos</p>
+                    </div>
+                    <div class="Naranja">
+                        <a class="position__text" href="detalle_mecanica.html">
+                            <p class="texto">La naranja mecánica</p>
+                        </a>
+                    </div>
+                    <div class="Blanco">
+                        <a class="position__text" href="detalle_baarry.html">
+                            <p class="texto">Barry Lindon</p>
+                        </a>
+                    </div>
+                    <div class="Rojo">
+                        <a class="position__text" href="detalle_rojo.html">
+                            <p class="texto">Teléfono rojo, volamos hacia Moscú</p>
+                        </a>
+                    </div>
+                    <div class="Azul">
+                        <a class="position__text" href="detalle%20_odisea.html">
+                            <p class="texto">2001 odisea en el espacio</p>
+                        </a>
+                    </div>
+                    <div class="Rosa">
+                        <a class="position__text" href="detalle_lolita.html">
+                            <p class="texto">Lolita</p>
+                        </a>
+                    </div>
+                    <div class="Verde">
+                        <a class="position__text" href="detalle_chaqueta.html">
+                            <p class="texto">La chaqueta metálica</p>
+                        </a>
+                    </div>
+                    <div class="oro proyectos__grid-desktop">
+                        <a class="position__text" href="detalle_gloria.html">
+                            <p class="texto">Senderos de gloria</p>
+                        </a>
+                    </div>
+                    <div class="gris proyectos__grid-desktop">
+                        <a class="position__text" href="detalle_miedo.html">
+                            <p class="texto">Miedo y deseo</p>
+                        </a>
+                    </div>
+                    <div class="purpura proyectos__grid-desktop">
+                        <a class="position__text" href="detalle_ojos.html">
+                            <p class="texto"> Ojos bien cerrados</p>
+                        </a>
+                    </div>
+                    <div class="marron proyectos__grid-desktop">
+                        <a class="position__text" href="detalle_espartaco.html">
+                            <p class="texto">Espartaco</p>
+                        </a>
+                    </div>
+                    <div class="amarillo proyectos__grid-desktop">
+                        <a class="position__text" href="detalle_resplandor.html">
+                            <p class="texto">El resplandor</p>
+                        </a>
+                    </div>
+                    <div class="aquamarina proyectos__grid-desktop">
+                        <a class="position__text" href="detalle_asesino.html">
+                            <p class="texto">El beso del asesino</p>
+                        </a>
+                    </div>
+                    <div class="celeste proyectos__grid-desktop">
+                        <a class="position__text" href="detalle_atraco.html">
+                            <p class="texto">Atraco perfecto</p>
+                        </a>
+                    </div>
+                    <div class="bio__button-proyectos">
+                        <a class="bio__button-more" href="proyectos.html" role="button">Ver mas &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="premios-mobile">
+            <div class="premios__head">
+                <h1 class="premios__head-title">Premios</h1>
+            </div>
+            <div class="proyectos__grid">
+                <div class="premio__uno"></div>
+                    <div class="premios-left">
+                        <h2 class="titulo-r">Globo de oro mejor película</h2>
+                        <p class="subtexto-r">Espartaco</p>
+                        <p class="subtexto-r">1964</p>
+                    </div>
+                    <div class="premios-right">
+                        <h2 class="titulo-l">Bafta mejor película</h2>
+                        <p class="subtexto-l">Telefono rojo, volamos hacia Moscú</p>
+                        <p class="subtexto-l">1961</p>
+                    </div>
+                <div class="premio__dos"></div>
+                <div class="premio__tres"></div>
+                    <div class="premios-left">
+                        <h2 class="titulo-r">Óscar mejores efectos visuales</h2>
+                        <p class="subtexto-r">2001 una odisea en el espacio</p>
+                        <p class="subtexto-r">1969</p>
+                    </div>
+                 <div class="bio__button-proyectos">
+                     <a class="bio__button-more" href="premios.html" role="button">Ver mas &rarr;</a>
+                </div>
+            </div>
+        </section>
+        <section class="premios-desktop">
+                <div class="premios__head-desktop">
+                    <h1 class="premios__head-titledesk">Premios</h1>
+                </div>
+                <div class="premios__grid">
+                    <div class="premios__item-uno"></div>
+                        <div class="premios-content">
+                            <h2 class="premios__tittle">Globo de oro mejor película</h2>
+                            <p class="premios__text">Espartaco</p>
+                            <p class="premios__text">1964</p>
+                        </div>
+                    <div class="premios__item-dos"></div>
+                        <div class="premios-content">
+                            <h2 class="premios__tittle">Bafta mejor película</h2>
+                            <p class="premios__text">Telefono rojo, volamos hacia Moscú</p>
+                            <p class="premios__text">1961</p>
+                        </div>
+                    <div class="premios__item-tres"></div>
+                        <div class="premios-content">
+                            <h2 class="premios__tittle">Óscar mejores efectos visuales</h2>
+                            <p class="premios__text">2001 una odisea en el espacio</p>
+                            <p class="premios__text">1969</p>
+                        </div>
+                    <div class="premios__item-cuatro"></div>
+                        <div class="premios-content">
+                            <h2 class="premios__tittle">Bafta mejor director</h2>
+                            <p class="premios__text">Barry Lindon</p>
+                            <p class="premios__text">1975</p>
+                        </div>
+                    <div class="premios__item-cinco"></div>
+                        <div class="premios-content">
+                            <h2 class="premios__tittle">Bafta mejor película de cualquier fuente</h2>
+                            <p class="premios__text">Teléfono rojo, volamos hacia Moscú</p>
+                            <p class="premios__text">1964</p>
+                        </div>
+                    <div class="premios__item-seis"></div>
+                        <div class="premios-content">
+                            <h2 class="premios__tittle">Bafta mejor película británica</h2>
+                            <p class="premios__text">Teléfono rojo, volamos hacia Moscú</p>
+                            <p class="premios__text">1964</p>
+                        </div>
+                    <div class="premios__item-siete"></div>
+                        <div class="premios-content">
+                            <h2 class="premios__tittle">Bafta UN AWARD</h2>
+                            <p class="premios__text">Teléfono rojo, volamos hacia Moscú</p>
+                            <p class="premios__text">1964</p>
+                        </div>
+                    <div class="premios__item-ocho"></div>
+                        <div class="premios-content">
+                            <h2 class="premios__tittle">NY Films Critrics Circle mejor película</h2>
+                            <p class="premios__text">La naranja mecánica</p>
+                            <p class="premios__text">1971</p>
+                        </div>
+                    <div class="premios__item-nueve"></div>
+                        <div class="premios-content">
+                            <h2 class="premios__tittle">NY Films Critrics Circle mejor director</h2>
+                            <p class="premios__text">La naranja mecánica</p>
+                            <p class="premios__text">1971</p>
+                        </div>
+                    <div class="premios__item-diez"></div>
+                        <div class="premios-content">
+                            <h2 class="premios__tittle">NY Films Critrics Circle mejor película</h2>
+                            <p class="premios__text">Teléfono rojo, volamos hacia Moscú</p>
+                            <p class="premios__text">1964</p>
+                        </div>
+                    <div class="premios__item-once"></div>
+                        <div class="premios-content">
+                            <h2 class="premios__tittle">Premio Bodil mejor película Norteamericana</h2>
+                            <p class="premios__text">Teléfono rojo, volamos hacia Moscú</p>
+                            <p class="premios__text">1964</p>
+                        </div>
+                    <div class="premios__item-doce"></div>
+                        <div class="premios-content">
+                            <h2 class="premios__tittle">Premio Bastone Bianco</h2>
+                            <p class="premios__text">Ojos bien cerrados</p>
+                            <p class="premios__text">1999</p>
+                        </div>
+                    <div class="premios__item-trece"></div>
+                        <div class="premios-content">
+                            <h2 class="premios__tittle">Premio David de Donatello mejor producción extranjera</h2>
+                            <p class="premios__text">La chaqueta metálica</p>
+                            <p class="premios__text">1988</p>
+                        </div>
+                    <div class="premios__item-catorce"></div>
+                        <div class="premios-content">
+                            <h2 class="premios__tittle">Premio David de Donatello mejor producción extranjera</h2>
+                            <p class="premios__text">2001, una odisea en el espacio</p>
+                            <p class="premios__text">1969</p>
+                        </div>
+                    <div class="premios__item-quince"></div>
+                        <div class="premios-content">
+                            <h2 class="premios__tittle">Premio David Europeo</h2>
+                            <p class="premios__text">Barry Lindon</p>
+                            <p class="premios__text">1977</p>
+                        </div>
+                </div>
+        </section>
+        <section class="testimonios" id="testimonios">
+            <div class="testimonios__head">
+                <h1 class="testimonios__head-title">Testimonios</h1>
+            </div>
+            <div class="testimonios__section">
+                <div class="testimonios__section_1">
+                    <div class="testimonios__section-text-bg1">
+                        <div class="container__testimonios">
+                            <h1 class="testimonios__section-title-desk">Testimonios</h1>
+                            <h2 class="testimonios__section-text-title">Christopher Nolan</h2>
+                            <p class="testimonios__section-text-subtitle-desk">Director de cine, guionista, productor y editor.</p>
+                            <p class="testimonios__section-text-quote">
+                                «Cuando la gente habla de la edad de las personas que miran una película, parte de lo que preguntan es:» ¿Cómo analiza un niño de 7 años el contenido? «Y si miras» 2001 «y lo piensas, no puedes analizarlo de todos modos como un adulto. La experiencia es la realidad.»
+                            </p>
+                            <div class="testimonios__section-pic-nolan">
+                                <img src="img/testimonios/Rectangle%2015.png" alt="imagen_testimoniouno" class="nolanpic">
+                            </div>
+                            <div class="testimonios__section-corchetes">
+                                <img src="img/icons/corchetes1.svg" alt="imagen_testimoniouno" class="corchetes_section1a">
+                            </div>
+                            <div class="testimonios__section-corchetes">
+                                <img src="img/icons/corchetes2.svg" alt="imagen_testimoniouno" class="corchetes_section1b">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonios__section_2">
+                    <div class="testimonios__section-text-bg2">
+                        <div class="container__testimonios">
+                            <h1 class="testimonios__section-title-desk">Testimonios</h1>
+                            <h2 class="testimonios__section-text-title">Martin
+                                Scorsese</h2>
+                            <p class="testimonios__section-text-subtitle-desk">Director de cine, guionista y productor.</p>
+                            <p class="testimonios__section-text-quote">
+                                Afirmó que Kubrick había logrado la monumental tarea de transformar la experiencia cinematográfica en espiritual.  «Es algo extraño», aseguró. «Mi lado religioso encontró un consuelo extraordinario al final de la película, un momento muy hermoso».
+                            </p>
+                            <div class="testimonios__section-pic-scorssese">
+                                <img src="img/testimonios/Rectangle%2022.png" alt="imagen_testimoniouno" class="nolanpic">
+                            </div>
+                            <div class="testimonios__section-corchetes">
+                                <img src="img/icons/corchetes1.svg" alt="imagen_testimoniouno" class="corchetes_section1a">
+                            </div>
+                            <div class="testimonios__section-corchetes">
+                                <img src="img/icons/corchetes2.svg" alt="imagen_testimoniouno" class="corchetes_section1b">
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="footer-nav">
+            <div class="footer-link">
+                <a class="footer__web-link" href="#">www.stanleykubrick.com</a>
+            </div>
+            <ul class="footer__nav-ul">
+                <li class="footer__nav-li">
+                    <a href="#" class="footer__nav-link">
+                        <img class="footer-nav__icono" src="img/icons/twitter.svg" alt="twitter">
+                    </a>
+                </li>
+                <li class="footer__nav-li">
+                    <a href="#" class="footer-nav__link">
+                        <img class="footer-nav__icono" src="img/icons/instagram.svg" alt="instagram">
+                    </a>
+                </li>
+                <li class="footer-nav__li">
+                    <a href="#" class="footer-nav__link">
+                        <img class="footer-nav__icono" src="img/icons/facebook.svg" alt="facebook">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</div>
+</body>
+</html>

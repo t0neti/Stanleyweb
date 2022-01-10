@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>La naranja mecánica</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="theme-color" content="#3c790a">
+    <meta name="theme-color"
+          content="#ecd96f"
+          media="(prefers-color-scheme: light)">
+    <meta name="theme-color"
+          content="#0b3e05"
+          media="(prefers-color-scheme: dark)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Antonio">
+    <meta name="generator" content="Clojure">
+    <meta name="keywords" content="portafolio, cine, películas, testimonios, premios, biografía, Kubrick">
+    <meta name="description" content="Web diseñada para mostrar el trabajo de Stanley Kubric a lo largo de toda su carrera">
+    <meta property="og:image" content="img/screenshot.png">
+    <meta property="og:title" content="Stanley Kubrick">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@cuenta">
+    <meta name="twitter:creator" content="@cuenta">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css@v1.7/symbiosis.min.css">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 601px)">
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/gh/tanrax/FFNM@1.5.0/dist/ffnm.min.js"  integrity="sha384-qlI8XJcMcJMh52x4w9HA9ItB8KmW6pKaJXijVQFl6UvT1nGCH+U6Y7sbbc11HkCH" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class=" container container_main">
+    <header class="header header--home">
+        <div class="header__main">
+            <div class="header__logo">
+                <a href="home.html" class="header__logo-link">
+                    <img src="img/icons/aperture.svg" class="imagen_logo" alt="imagen-logo"><span class="header__logo-title">Stanley                        Kubrick</span>
+                </a>
+            </div>
+            <!-- menú hamburguesa con javascript -->
+            <button class="header__nav-menu--open" is-click="class:add('show--menu', '#nav')">
+                <img src="img/icons/menu.svg" class="imagen_bars" alt="imagen-menu">
+            </button>
+            <nav id="nav" class="header__nav">
+                <!-- botón cerrar -->
+                <div class="nav__button" is-click="class:remove('show--menu', '#nav')">
+                    <button class="header__button-nav--close"><span class="botonX">X</span></button>
+                </div>
+                <!-- Menú -->
+                <ul class="nav__ul">
+                    <li class="nav__item">
+                        <a href="biografia.html" class="nav__link">Biografía</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="proyectos.html" class="nav__link mobilepart">Proyectos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link desktoppart">Proyectos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="premios.html" class="nav__link mobilepart">Premios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="premios_detalle.html" class="nav__link desktoppart">Premios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Testimonios</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main mecanica">
+        <section class="detalle">
+            <article class="detalle__item">
+                <div class="detalle__pic-img">
+                    <img src="./img/naranja.png" alt="naranjaimg" class="detalle-img">
+                </div>
+            </article>
+            <article class="detalle__item">
+                <div class="detalle_texts">
+                    <h2 class="detalle__texts-title">La naranja mecánica</h2>
+                    <p class="detalle__texts-description">A Clockwork Orange (La naranja mecánica en Hispanoamérica y España) es una película angloestadounidense de ciencia ficción de 1971, producida y dirigida por Stanley Kubrick. Durante su lanzamiento se convirtió en la cinta más polémica de la historia del cine, siendo así el trabajo más arriesgado y reivindicativo de su director. Adaptación fílmica de la novela homónima de 1962 escrita por Anthony Burgess. La película, filmada en el Reino Unido, relata las desventuras de Alex DeLarge (Malcolm McDowell), un delincuente juvenil cuyos placeres son: escuchar música clásica (en especial a Beethoven), el sexo, las drogas y la «ultraviolencia», y lidera una pandilla (Pete, Georgie y Dim) a quienes llama drugos y con los que comete una serie de violentas fechorías, hasta que es traicionado por ellos y capturado por la policía. En un intento por salir de prisión se somete voluntariamente a una técnica psicológica de rehabilitación conductista experimental conocida como método Ludovico. La terapia funciona, Alex es liberado y ahora debe enfrentarse a su pasado desde su nueva conducta social condicionada. La mayor parte del filme se narra en nadsat, una jerga adolescente ficticia que combina lenguas eslavas, especialmente ruso, inglés y la jerga rimada cockney. En España e Hispanoamérica, algunos términos fueron adaptados al idioma caló.</p>
+
+                    <p class="detalle__texts-description">La película se caracteriza por contenidos violentos que facilitan una crítica social en psiquiatría, el pandillerismo juvenil, las teorías conductistas en psicología y otros tópicos ubicados en una sociedad futurista distópica. Su banda sonora está principalmente compuesta por pasajes de música clásica, varios de ellos reinterpretados y en ocasiones, como en el caso de los créditos, adaptados por la compositora Wendy Carlos utilizando el sintetizador Moog.</p>
+
+                    <p class="detalle__texts-description">Pese a la polémica que desató, la cinta fue nominada a numerosos reconocimientos cinematográficos, entre ellos cuatro premios Óscar, incluyendo el de mejor película, convirtiéndola en la primera película de ciencia ficción en ser nominada en esa categoría. Aunque no ganó el premio, sí forma parte de la lista AFI's 10 Top 10 en la categoría de películas de ciencia ficción. En 2020 la Biblioteca del Congreso de Estados Unidos seleccionó La naranja mecánica para ser preservada en el National Film Registry por ser «cultural, histórica o estéticamente significante».</p>
+
+                    <p class="detalle__texts-description">La película fue filmada enteramente en Inglaterra, lugar de residencia de Kubrick. El director eligió a McDowell después de ver la película "If....". Colaboradores cercanos al director dijeron que era posible que no hubiera habido tal adaptación de la novela si el actor no aceptaba el papel. La elección de la vestimenta de Alex —una especie de traje para jugar cricket— fue elegida por Kubrick al ver al actor vestido así. El sufrimiento de McDowell durante toda la filmación fue largo y tedioso. Se fracturó una costilla durante la escena de tortura aplicada por sus ex drugos en el abrevadero para cerdos en medio del bosque, en pleno invierno.9​ Se rayó la córnea del ojo cuando filmaban el tratamiento de Ludovico —el actor se arrancó el casco de látex con los cables que sujetaban su cabeza y sus párpados en un ataque de pánico después de largas horas—. El doctor que está sentado junto a Alex poniéndole gotas de agua en los ojos para que no se sequen era un doctor real.</p>
+
+                    <p class="detalle__texts-description">La naranja mecánica fue la primera película que Kubrick lanzó bajo la productora Warner Bros. También fue la primera vez que escribió el guion en solitario. En el documental se aprecia el control total que el director tenía en sus películas, como en La naranja mecánica, en donde pidió una lista de los cines donde se iba a proyectar para saber si los colores de las paredes y el tipo de luz eran los adecuados. McDowell cuenta como anécdota en el documental el tipo de personalidad que tenía el director: después de la advertencia de su mánager por la falta de pago, el actor le reclamó a Kubrick; este respondió descontándole su salario con los partidos de ajedrez que le había ganado —en los descansos McDowell le enseñó a jugar al tenis de mesa y Kubrick al ajedrez—.</p>
+                </div>
+            </article>
+            <article class="detalle__item">
+                <div class="detalle__fecha-lateral">
+                    <hr class="leftborder"> <p class="detalle__fecha">1968</p><hr class="rightborder">
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="footer-nav">
+            <div class="footer-link">
+                <a class="footer__web-link" href="https://www.minecraft.net/es-es">www.stanleykubrick.com</a>
+            </div>
+            <ul class="footer__nav-ul">
+                <li class="footer__nav-li">
+                    <a href="#" class="footer__nav-link">
+                        <img class="footer-nav__icono" src="img/icons/twitter.svg" alt="twitter">
+                    </a>
+                </li>
+                <li class="footer__nav-li">
+                    <a href="#" class="footer-nav__link">
+                        <img class="footer-nav__icono" src="img/icons/instagram.svg" alt="instagram">
+                    </a>
+                </li>
+                <li class="footer-nav__li">
+                    <a href="#" class="footer-nav__link">
+                        <img class="footer-nav__icono" src="img/icons/facebook.svg" alt="facebook">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</div>
+</body>
+</html>
